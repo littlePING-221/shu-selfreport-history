@@ -14,13 +14,13 @@
 
 - 下载对应的浏览器的驱动，selenium支持的系统和浏览器如下图，详见[Selenium官网说明](https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/)
 
-  <img src="C:\Users\Ping\AppData\Roaming\Typora\typora-user-images\image-20220820131516411.png" alt="image-20220820131516411" style="zoom:50%;" />
+  <img src="pic/image-20220820131516411.png" alt="image-20220820131516411" style="zoom:50%;" />
 
 - 将下载下来的驱动放到项目文件夹中
 
 - 修改`代码第6行`对应的浏览器名称和驱动文件名称
 
-	<img src="C:\Users\Ping\AppData\Roaming\Typora\typora-user-images\image-20220820131859109.png" alt="image-20220820131859109" style="zoom:50%;" />
+	<img src="pic/image-20220820131859109.png" alt="image-20220820131859109" style="zoom:50%;" />
 
 - 修改`代码第9 10行`的学号 密码
 
