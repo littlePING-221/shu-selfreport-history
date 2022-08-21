@@ -21,14 +21,20 @@ while True:
     time.sleep(0.5)
     d.find_element(By.ID, "p1_ChengNuo-inputEl-icon").click()  # 勾选承诺
     time.sleep(0.5)
-    # 当天是否在上海： 在上海（不进学校）8; 不在上海 9
+    # 当天是否在上海： 在上海（不进学校）8; 不在上海 9 
     d.find_element(By.ID, "fineui_8-inputEl-icon").click()  # 在上海（不进学校）
     time.sleep(0.5)
     d.find_element(By.ID, "fineui_24-inputEl-icon").click()  # 是否家庭地址
     time.sleep(0.5)
-    d.find_element(By.ID, "p1_ctl01_btnSubmit").click()  # 提交
+    # 近7日是否有高中低风险地区旅居史，无 高 中 低 依次为 26 27 28 29
+    d.find_element(By.ID, "fineui_26-inputEl-icon").click()  # 无
     time.sleep(0.5)
-    d.find_element(By.ID, "fineui_33").click()  # 确定
+    # 是否被认定为密接：是 30，否31
+    d.find_element(By.ID, "fineui_31-inputEl-icon").click()  # 否
+    time.sleep(0.5)
+    d.find_element(By.ID, "p1_ctl01_btnSubmit").click() # 提交
+    time.sleep(0.5)
+    d.find_element(By.ID, "fineui_39").click()  # 确定
     time.sleep(0.5)
     # 返回列表页
     d.get(URL)
